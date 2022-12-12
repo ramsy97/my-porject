@@ -1,0 +1,108 @@
+*, 
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Silkscreen', cursive;
+}
+
+:root {
+    --bg-primary: #222;
+    --bg-secondary: hotpink;
+    --txt-primary: #f7f7f7;
+    --txt-secondary: #222;
+    --icons-bg-primary: red;
+    --icon-bg-secondary: green;
+}
+
+.container {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-color: var(--bg-primary);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 40%;
+    border: 1px solid white;
+    background-color: var(--bg-secondary);
+    color: var(--txt-secondary);
+    padding: 32px;
+    margin: 8px;
+    box-shadow: 2px 2px 2px 2px rgb(243, 239, 239);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.icons {
+    margin-top: 8px;
+    font-size: 24px;
+    color: var(--icons-bg-primary);
+}
+
+
+.title {
+    font-size: 2em;
+}
+
+
+.description {
+    margin-top: 10px;
+    font-size: .8em;
+}
+
+.btn {
+    margin-top: 16px;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: var(--bg-primary);
+    color: var(--txt-primary);
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 476px) {
+    .container {
+        background-color: none;
+    }
+
+    .card {
+        width: 95%;
+    }
+
+    .title {
+        font-size: 3em;
+    }
+
+    .icons {
+        font-size: 2em;
+    }
+
+    .description {
+        font-size: 2em;
+    }
+
+    .btn {
+        padding: 16px;
+        font-size: 1.5em;
+    }
+}

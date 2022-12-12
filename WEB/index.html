@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB COBA-COBA</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/icon/partner.png" alt="logo" class="logo-img"/>
+            <h1 class="logo-title">RAMY 97</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#jasa">JASA</a></li>
+                <li><a href="mailto:ramysyafitri8@gmail.com">KONTAK</a></li>
+            </ul>
+        </nav>
+        <button class="btn-cta" onclick="redirInstagram()">Follow Me</button>
+    </header>
+    <div class="container">
+        <div class="intro">
+            <p class="title">Hai Guys, Ramy Syafitri Here!</p>
+            <p class="description">Technology Information</p>
+            <img src="assets/foto/beruang.jpg" alt="ramy foto 1" class="img-foto"/>
+        </div>
+    </div>
+    <div class="paralax">
+        <div class="tentang">
+            <p class="title">Saya Adalah Programmer</p>
+            <p class="description">Masih belajar belum jago-jago banget.</p>
+            <div class="mt-10">
+                <button class="btn-cta" onclick="redirWhatsapp()">Mari Bekerja Sama</button>
+            </div>
+        </div>
+        <div class="container">
+                <div class="card" id="jasa">
+                    <div class="card-item">
+                        <img src="assets/icon/24-hours.png" alt="icon" class="icon"/>
+                        <p class="card-title">Fast Respon 24/7</p>
+                        <p class="card-description">Layanan 24 Jam kapan pun anda butuh bantuan</p>
+                    </div>
+                    <div class="card-item">
+                        <img src="assets/icon/hot-deal.png" alt="icon" class="icon"/>
+                        <p class="card-title">Programmer Tidak Mahal</p>
+                        <p class="card-description">Biaya jasa sangat ramah di kantong anda</p>
+                    </div>
+                    <div class="card-item">
+                        <img src="assets/icon/rating.png" alt="icon" class="icon"/>
+                        <p class="card-title">Review</p>
+                        <p class="card-description">Mereka sangat seneng bekerja sama dengan Saya</p>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <footer>
+        <p class="title">&copy; Ramy Syafitri Website 2022</p>
+    </footer>
+    <script>
+        function redirInstagram() {
+            window.location.href = "https://instagram.com/ramysyafitri"
+        }
+        function redirWhatsapp() {
+            window.location.href = "https://wa.me/+6285156414903"
+        }
+    </script>
+</body>
+</html>
